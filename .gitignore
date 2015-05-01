@@ -1,0 +1,5 @@
+/local.properties
+/.idea/workspace.xml
+target/*
+bin/*
+gen/*
