@@ -7,8 +7,15 @@
     <groupId>test</groupId>
     <artifactId>test</artifactId>
     <version>1.0</version>
+    <packaging>apk</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>android</groupId>
+            <artifactId>android</artifactId>
+            <version>5.1.1_r2</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.android.support</groupId>
             <artifactId>support-v4</artifactId>
@@ -30,4 +37,21 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.simpligility.maven.plugins</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.2.1</version>
+                <extensions>true</extensions>
+                <configuration>
+                <sdk>
+                    <platform>22</platform>
+                </sdk>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
